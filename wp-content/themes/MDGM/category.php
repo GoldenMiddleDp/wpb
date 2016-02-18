@@ -22,7 +22,7 @@
 					<?php endif; ?>
 			</div>
 			<aside class="uk-width-small-1-1 uk-width-medium-1-5 sidebar">
-				<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar')) ?>
+				<?php require('sidebar.php'); ?>
 			</aside>
 		</div>
 	</div><!-- #content -->

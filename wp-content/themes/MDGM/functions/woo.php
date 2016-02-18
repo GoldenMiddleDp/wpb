@@ -4,7 +4,7 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
-add_action( 'wp_enqueue_scripts', 'child_manage_woocommerce_styles', 99 );
+//add_action( 'wp_enqueue_scripts', 'child_manage_woocommerce_styles', 99 );
 
 add_filter('woocommerce_currency_symbol', 'change_existing_currency_symbol', 10, 2);
 
@@ -40,11 +40,11 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart
 function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	ob_start();
 	?>
-	<a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf (_n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a> 
+	<a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf (_n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
 	<?php
-	
+
 	$fragments['a.cart-contents'] = ob_get_clean();
-	
+
 	return $fragments;
 }
 
@@ -61,7 +61,7 @@ add_filter ( 'woocommerce_product_thumbnails_columns', 'xx_thumb_cols' );
  */
 function yourtheme_woocommerce_image_dimensions() {
 	global $pagenow;
- 
+
 	if ( ! isset( $_GET['activated'] ) || $pagenow != 'themes.php' ) {
 		return;
 	}
@@ -86,4 +86,3 @@ function yourtheme_woocommerce_image_dimensions() {
 	update_option( 'shop_thumbnail_image_size', $thumbnail ); 	// Image gallery thumbs
 }
 add_action( 'after_switch_theme', 'yourtheme_woocommerce_image_dimensions', 1 );
-

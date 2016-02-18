@@ -24,6 +24,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	
 <?php } else {?>
 	<aside class="uk-width-small-1-1 uk-width-medium-1-5 WooSidebar">
-		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('WooSidebar')) ?>
+		<div data-uk-sticky="{top:100}">
+			<div class="aside-bg">	
+				<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('WooSidebar')) ?>
+			</div>
+		</div>
 	</aside>
 <?php } ?>
