@@ -7,7 +7,7 @@
 
     <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
     <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
-		
+
     <link rel="stylesheet/less" href="<?php echo get_template_directory_uri(); ?>/less/uikit.less">
     <link rel="stylesheet/less" href="<?php echo get_template_directory_uri(); ?>/less/template.less">
 
@@ -25,7 +25,7 @@
     <meta property="og:description" content="<?php bloginfo('description'); ?>">
     <meta property="fb:app_id" content="00000">
     <meta property="og:type" content="business.business">
-    
+
     <?php if(is_home()){ ?>
         <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/screenshot.png">
     <?php } elseif(is_single()) { ?>
@@ -37,8 +37,8 @@
       <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/screenshot.png">
     <?php } ?>
 
-		
-		
+
+
 	</head>
 	<body <?php body_class(); ?>>
     <?php include_once('functions/options-varible.php'); ?>
@@ -51,12 +51,13 @@
               <!-- logo -->
               <div class="logo uk-height-1-1">
                 <div class="uk-vertical-align uk-height-1-1">
-                  <div class="uk-vertical-align-middle">
+                  <div class="uk-vertical-align-middle uk-width-1-1">
                       <a href="<?php echo home_url(); ?>">
                         <!-- svg -->
                         <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" width="200px;" class="logo-img">
                       </a>
-                 
+											<a href="#mobile-menu" class=" lnr-menu uk-icon-large uk-float-right uk-visible-small" id="mob-menu" data-uk-offcanvas></a>
+
                   </div>
                 </div>
               </div>
@@ -82,12 +83,8 @@
                     </nav>
                   </div>
               </div>
-              
-              <div class="uk-vertical-align uk-height-1-1 uk-visible-small uk-text-right">
-                <div class="uk-vertical-align-middle">
-                    <a href="#mobile-menu" class=" uk-icon-bars uk-icon-large" id="mob-menu" data-uk-offcanvas></a>
-                </div>
-              </div>
+
+
               <!-- /nav -->
             </div>
             <div class="uk-width-small-1-1 uk-width-medium-1-6 uk-text-right uk-height-1-1">
@@ -96,7 +93,7 @@
                     <?php if( class_exists( 'WooCommerce' ) ){ ?>
                       <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf (_n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
                     <?php } else { ?>
-                         <a href="#contmod" data-uk-modal="" class="uk-button">Hello</a>  
+                         <a href="#contmod" data-uk-modal="" class="uk-button">Hello</a>
                     <?php }; ?>
                   </div>
               </div>
@@ -105,4 +102,3 @@
         </div>
       </header>
 			<div class="height-fix">
-			

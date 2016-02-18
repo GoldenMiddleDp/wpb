@@ -14,7 +14,7 @@ class basey_primary_menu extends Walker_Nav_Menu {
      */
     public function start_lvl( &$output, $depth = 0, $args = array() ) {
         $indent = str_repeat( "\t", $depth );
-        $output .= "\n$indent<div class=\"uk-dropdown uk-dropdown-navbar\">\n<ul role=\"menu\" class=\"uk-nav uk-nav-navbar\">\n";
+        $output .= "\n$indent<div class=\"uk-dropdown uk-dropdown-navbar\" >\n<ul role=\"menu\" class=\"uk-nav uk-nav-navbar\">\n";
     }
 
     /**
@@ -59,7 +59,7 @@ class basey_primary_menu extends Walker_Nav_Menu {
 
         $dropdown = '';
         if ( $args->has_children && $depth == 0)
-            $dropdown .= ' data-uk-dropdown="{mode:\'click\'}"';
+            $dropdown .= ' data-uk-dropdown="{mode:\'click\', pos:\'bottom-center\'}"';
 
         if ( in_array( 'current-menu-item', $classes ) || in_array('current-menu-parent', $classes))
             $class_names .= ' uk-active';
@@ -97,7 +97,7 @@ class basey_primary_menu extends Walker_Nav_Menu {
         }
 
         $item_output = $args->before;
-
+        //$item_output .= '<a'. $attributes .' data-uk-smooth-scroll="{offset: 90}" >';
         $item_output .= '<a'. $attributes .'>';
         $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
         $item_output .= ( $args->has_children && 0 === $depth ) ? ' <span class="lnr-chevron-down"></span></a>' : '</a>';

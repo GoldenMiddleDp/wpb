@@ -14,4 +14,6 @@ $(document).ready(function(){
 
     $('.height-fix').css("min-height", heightMath);
 
+    $('.ninja-forms-form-wrap form').addClass('uk-form');
+
 });

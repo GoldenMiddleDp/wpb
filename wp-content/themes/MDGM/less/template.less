@@ -53,10 +53,10 @@ small a{
 }
 a{
 	color:@blue;
-	
+
 }
 a:hover{
-	color:@blue + #222; 
+	color:@blue + #222;
 	border: none;
 	box-sizing: padding-box;
 }
@@ -103,7 +103,7 @@ header{
 					border-color: @accent !important;
 					color: @dark - #111 !important;
 					background: transparent !important;
-					
+
 					transition:0.3s;
 					padding: 0 1%;
 				}
@@ -122,19 +122,10 @@ header{
 					box-sizing: border-box;
 					color: @dark !important;
 				}
-			}
-			li.uk-parent{
-				a{
-					cursor: pointer !important;
-				}
 				.uk-dropdown{
-					padding: 0  @units*2;
-					background: @header-bg;
-					overflow: hidden;
-					width: @unitl*12;
-					border: 1px solid @header-bg - #222;
-					border-top: none;
-					ul{
+						ul{
+							overflow: hidden;
+						}
 						li{
 							display: inline-block !important;
 							width: 100% !important;
@@ -145,6 +136,54 @@ header{
 								padding: @units*2 0 !important;
 								display: inline-block !important;
 								width: 100% !important;
+								border-bottom: none;
+								.font
+							}
+							a:hover{
+								background-color: @light - #222 !important;
+								color: @dark !important;
+								.font
+							}
+						}
+						li.uk-active{
+							a{
+								background-color: @accent !important;
+								color: @light !important;
+							}
+						}
+					}
+
+			}
+			li.uk-parent{
+				a{
+					cursor: pointer !important;
+				}
+				.uk-dropdown{
+					padding: 0;
+					background: @header-bg;
+					overflow: hidden;
+					width: @unitl*12;
+					border: 1px solid @header-bg - #222;
+					border-top: none;
+					overflow: hidden;
+					ul{
+						width: inherit;
+						overflow: hidden;
+						margin: 0 !important;
+						padding:0 !important;
+						li{
+							display: inline-block !important;
+							width: 100% !important;
+							width: inherit;
+							padding:0 !important;
+							a{
+								background: @header-bg - #111 !important;
+								color:@dark !important;
+								height: auto !important;
+								padding: @units*2 0 !important;
+								display: inline-block !important;
+								width: 100% !important;
+								width: inherit;
 								.font
 							}
 							a:hover{
@@ -167,6 +206,10 @@ header{
 			}
 		}
 	}
+	.lnr-menu{
+		float: right !important;
+		padding-top: @units*4
+	}
 	a{
 		.font
 	}
@@ -185,10 +228,10 @@ header.uk-active{
 	}
 	.uk-slidenav-next {
     right: 24px !important;
-}
-.uk-slidenav-previous{
-    left: 24px !important;
-}
+	}
+	.uk-slidenav-previous{
+	    left: 24px !important;
+	}
 }
 
 main{
@@ -221,7 +264,7 @@ aside{
 		}
 		span.amount{
 			height: 31px;
-			border-radius: 4px;
+			border-radius: @radius;
 			background-color: #f7f7f7;
 			text-align: left;
 			padding: 4px 6px;
@@ -236,7 +279,7 @@ aside{
 			span.amount{
 				text-decoration: line-through !important;
 				height: 31px !important;
-				border-radius: 4px !important;
+				border-radius: @radius !important;
 				background-color: transparent !important;
 				text-align: left !important;
 				padding: 4px 0px !important;
@@ -250,7 +293,7 @@ aside{
 			span.amount{
 				text-decoration: none !important;
 				height: 31px !important;
-				border-radius: 4px !important;
+				border-radius: @radius !important;
 				background-color: @accent-two !important;
 				text-align: left !important;
 				padding: 4px 6px !important;
@@ -334,7 +377,7 @@ footer{
 			display: inline-block;
 			width: auto;
 			text-align: justify;
-			
+
 			a{
 				opacity: 0.6;
 				img{
@@ -346,7 +389,7 @@ footer{
 	.sub-menu{
 		padding:0;
 	}
-	
+
 	.uk-offcanvas{
 		ul.menu{
 			padding:16px !important;
@@ -364,7 +407,7 @@ footer{
 	background: @accent  !important;
 	border:none  !important;
 	border-bottom: 3px solid @accent - #222  !important;
-	border-radius: 3px  !important;
+	border-radius: @radius  !important;
 	color:#fff;
 	padding: 2px 12px  !important;
 	cursor: pointer  !important;
@@ -409,7 +452,7 @@ footer{
 	}
 	.price-block{
 		height: 31px;
-		border-radius: 4px;
+		border-radius: @radius;
 		background-color: ;
 		text-align: left;
 		padding: 4px 6px;
@@ -487,7 +530,7 @@ footer{
 		width: 100px !important;
 	}
 	.star-rating:before, .star-rating span:before{
-		 color:@accent-two ;	
+		 color:@accent-two ;
 	}
 	.woocommerce-review-link{
 		font-size: 13px;
@@ -498,7 +541,7 @@ footer{
 			border:none !important;
 		}
 		.description_tab, .additional_information_tab, .reviews_tab{
-			border: none !important; 
+			border: none !important;
 		    background-color: transparent !important;
 		    display: inline-block;
 		    position: relative;
@@ -542,7 +585,7 @@ footer{
 			span.amount{
 				text-decoration: line-through !important;
 				height: 31px !important;
-				border-radius: 4px !important;
+				border-radius: @radius !important;
 				background-color: transparent !important;
 				text-align: left !important;
 				padding: 4px 0px !important;
@@ -556,7 +599,7 @@ footer{
 			span.amount{
 				text-decoration: none !important;
 				height: 31px !important;
-				border-radius: 4px !important;
+				border-radius: @radius !important;
 				background-color: @accent-two !important;
 				text-align: left !important;
 				padding: 4px 6px !important;
@@ -567,7 +610,7 @@ footer{
 				margin-left: 6px;
 			}
 		}
-	
+
 }
 .WooSidebar{
 	.woocommerce{
@@ -578,7 +621,7 @@ footer{
 	}
 	.ui-slider-range{
 		background-color: @accent !important;
-		
+
 	}
 	.ui-slider-handle{
 		background-color: @light !important;
@@ -635,7 +678,7 @@ footer{
 		text-decoration: none;
 		opacity: 0.7;
 	}
-	
+
 }
 ul.menu{
 	margin: 0;
@@ -705,7 +748,63 @@ ins {
 .uk-search:before{
 	content:"";
 }
+.lnr-menu{
+	font-size: 32px !important;
+}
+#mob-cart{
+	background: @dark + #111;
+	padding: @units*2 0 !important;
+}
+.uk-offcanvas-bar{
+	background: @dark;
+	#offcan-menu{
+		overflow: hidden;
 
+		#mob-cart{
+			background: @dark + #111;
+			padding: @units*2 0 !important;
+			margin-bottom: @units;
+		}
+		ul{
+			width: 100%;
+			li{
+				width: inherit;
+				a{
+					width: 90%;
+					display: inline-block;;
+					padding: @units*2 0 @units*2 - 1px 10% !important;
+					border-bottom: 1px solid  @dark - #111;
+					color: @light;
+				}
+				a:hover{
+					text-decoration: none;
+					background: @dark - #111;
+				}
+				ul{
+					margin: 0;
+					padding: 0;
+					a{
+						width: 80% !important;
+						padding-left: 20% !important;
+					}
+				}
+			}
+			li.current-menu-item{
+				a{
+					width: 90%;
+					display: inline-block;;
+					padding: @units*2 0 @units*2 - 1px 10% !important;
+					border-bottom: 1px solid  @accent;
+					color: @light;
+				}
+				a:hover{
+					text-decoration: none;
+					background: @dark - #111;
+				}
+			}
+		}
+	}
+}
 
 
 
@@ -723,8 +822,8 @@ ins {
 
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 480px) {
 header{
 	#logo, #mob-menu{
@@ -741,64 +840,78 @@ header{
 		}
 	}
 }
-#mob-cart{
-	background: @dark + #111;
-	padding: 16px 8px 16px 0;
-}
+
 .uk-modal-form{
-	
+
 	z-index: 9999 !important;
 }
 .uk-modal{
 	padding-top: @header-height !important;
+}
+.uk-slidenav{
+	display: none !important;
 }
 
 /* Styles */
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen 
+@media only screen
 and (min-width : 321px) {
+	.uk-slidenav{
+		display: none !important;
+	}
 /* Styles */
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen 
+@media only screen
 and (max-width : 320px) {
+	.uk-slidenav{
+		display: none !important;
+	}
 /* Styles */
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
+@media only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px) {
-/* Styles */
+	.uk-slidenav{
+		display: none !important;
+	}
 }
 
 /* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : landscape) {
-/* Styles */
+	.uk-slidenav{
+		display: none !important;
+	}
 }
 
 /* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : portrait) {
-/* Styles */
+	.uk-slidenav{
+		display: none !important;
+	}
 }
 
 /* Desktops and laptops ----------- */
-@media only screen 
+@media only screen
 and (min-width : 1224px) {
-/* Styles */
+	.uk-slidenav{
+		display: block !important;
+	}
 }
 
 /* Large screens ----------- */
-@media only screen 
+@media only screen
 and (min-width : 1824px) {
 /* Styles */
 }
