@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<div class="uk-container uk-container-center uk-margin-top uk-margin-bottom" id="cat-loop">
 		<div class="uk-grid">
-			<div class="uk-width-small-1-1 uk-width-medium-4-5">
+			<div class="uk-width-small-1-1 uk-width-medium-7-10">
 			    <?php
 					global $query_string;
 
@@ -25,9 +25,9 @@
 
 					<?php endwhile; ?>
 
-					    
+
 			</div>
-			<aside class="uk-width-small-1-1 uk-width-medium-1-5 sidebar">
+			<aside class="uk-width-small-1-1 uk-width-medium-3-10 sidebar">
 				<?php require('sidebar.php'); ?>
 			</aside>
 		</div>

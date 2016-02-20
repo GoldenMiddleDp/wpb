@@ -21,11 +21,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php if(is_product()){ ?>
-	
+
 <?php } else {?>
 	<aside class="uk-width-small-1-1 uk-width-medium-1-5 WooSidebar">
-		<div data-uk-sticky="{top:100}">
-			<div class="aside-bg">	
+		<div data-uk-sticky="{top:100, boundary: true}">
+			<div class="aside-bg">
 				<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('WooSidebar')) ?>
 			</div>
 		</div>

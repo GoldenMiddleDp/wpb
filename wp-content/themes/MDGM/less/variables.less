@@ -1,12 +1,13 @@
 // IMPORT
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic,600,600italic,800,800italic&subset=latin,cyrillic-ext);
+//@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic,600,600italic,800,800italic&subset=latin,cyrillic-ext);
 
 // Colors
-@dark:#444;
-@light:#F7F7F7;
-@accent:#83CC61;
-@accent-two:#FFDE68;
-@blue:#5CA9FF;
+@dark: #444;
+@light: #F7F7F7;
+@accent: #83CC61;
+@accent-two: #FFDE68;
+@blue: #5CA9FF;
+@link: @blue;
 
 // Units
 @units:4px;
@@ -25,7 +26,8 @@
 @footer-bg:@light;
 
 // Typography
-@font: 'Open Sans', sans-serif;
+@font: Helvetica, Arial, sans-serif;
+@font-heading: @font;
 
 // @font-face {
 //     font-family: 'Helvetica Roman';
@@ -37,8 +39,15 @@
 //Mixins
 .font{
 	font-family: @font !important;
-	font-size: 16px !important;
-	line-height: 27px !important;
+	font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.font-heading{
+	text-transform: normal !important;
+	font-weight: 400 !important;
+	letter-spacing: -1px;
 }
 .shadow{
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.55);
