@@ -1,4 +1,4 @@
-<div class="uk-margin-large-bottom">
+<div class="uk-margin-large-bottom uk-width-1-1">
 		<article id="post-<?php the_ID(); ?>" <<?php post_class( 'uk-article' ); ?>>
 			<h2 class="uk-width-1-1">
 				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -15,16 +15,16 @@
 					</div>
 					<div class="uk-width-small-1-1 uk-width-medium-7-10">
 						<div class="article-content">
-						 <?php the_excerpt(); ?>
+						 <?php my_excerpt('regular'); ?>
 					 </div>
 					 <a href="<?php the_permalink(); ?>"><?php _e( 'Read', 'MDGM' ); ?> <span class="lnr-arrow-right"></span></a>
 					</div>
 				</div>
 			<?php } else { ?>
 				<div class="article-content">
-					<?php the_excerpt(); ?>
+					<?php my_excerpt('regular'); ?>
 				</div>
-				<a href="<?php the_permalink(); ?>"><?php _e( 'Read', 'MDGM' ); ?> <span class="icon-right-open-mini"></span></a>
+				<a href="<?php the_permalink(); ?>"><?php _e( 'Read', 'MDGM' ); ?> <span class="lnr-arrow-right"></span></a>
 			<?php } ?>
 		</article>
 		<hr class="uk-article-divider">

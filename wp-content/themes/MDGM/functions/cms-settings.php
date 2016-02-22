@@ -29,7 +29,7 @@ if (function_exists('add_theme_support')){
     add_image_size('slider', 1920, 600, true); // Large Thumbnail
 	add_image_size('large', 1200, '', true); // Large Thumbnail
     add_image_size('medium', 720, '', true); // Medium Thumbnail
-    add_image_size('small', 320, '', true); // Small Thumbnail
+    add_image_size('small', 360, '', true); // Small Thumbnail
     add_image_size('extra-small', 80, '', true); // Small Thumbnail
 
 
@@ -68,10 +68,54 @@ if (function_exists('add_theme_support')){
         }
     }
 
-    function custom_excerpt_length( $length ) {
-        return 50;
+    class Excerpt {
+
+      // Default length (by WordPress)
+      public static $length = 50;
+
+      // So you can call: my_excerpt('short');
+      public static $types = array(
+          'short' => 20,
+          'regular' => 50,
+          'long' => 100
+        );
+
+      /**
+       * Sets the length for the excerpt,
+       * then it adds the WP filter
+       * And automatically calls the_excerpt();
+       *
+       * @param string $new_length
+       * @return void
+       * @author Baylor Rae'
+       */
+      public static function length($new_length = 50) {
+        Excerpt::$length = $new_length;
+
+        add_filter('excerpt_length', 'Excerpt::new_length');
+
+        Excerpt::output();
+      }
+
+      // Tells WP the new length
+      public static function new_length() {
+        if( isset(Excerpt::$types[Excerpt::$length]) )
+          return Excerpt::$types[Excerpt::$length];
+        else
+          return Excerpt::$length;
+      }
+
+      // Echoes out the excerpt
+      public static function output() {
+        the_excerpt();
+      }
+
     }
-    add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+    // An alias to the class
+    function my_excerpt($length = 50) {
+      Excerpt::length($length);
+    }
 
     add_filter( 'the_content_more_link', 'modify_read_more_link' );
     function modify_read_more_link() {
