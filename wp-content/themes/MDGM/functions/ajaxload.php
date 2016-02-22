@@ -15,11 +15,11 @@ function true_load_posts(){
 	$args = unserialize(stripslashes($_POST['query']));
 	$args['paged'] = $_POST['page'] + 1; // следующая страница
 	$args['post_status'] = 'publish';
-	$p = get_template_directory_uri();
+	$args['orderby'] = 'date';
 	$q = new WP_Query($args);
 	if( $q->have_posts() ):
 		while($q->have_posts()): $q->the_post();
-		require_once(__DIR__ .'/../parts/loops/article.php');
+		require(__DIR__ .'/../parts/loops/article.php');
 		endwhile;
 	endif;
 	wp_reset_postdata();

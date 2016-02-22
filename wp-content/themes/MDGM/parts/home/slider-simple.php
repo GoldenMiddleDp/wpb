@@ -1,6 +1,6 @@
 <section id="slider" class="section-space uk-margin-top-remove">
 
-	    <div class="uk-slidenav-position" data-uk-slideshow="{kenburns:'30s', autoplay:true}">
+	    <div class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}">
 		    <ul class="uk-slideshow">
 		        <?php
 				$original_query = $wp_query;
@@ -25,7 +25,8 @@
 				            <div class="uk-vertical-align uk-height-1-1">
 							    <div class="uk-vertical-align-middle">
 							    	<h2 class="uk-margin-remove"><?php the_title(); ?></h2>
-			                		<p><?php the_excerpt(); ?></p>
+			              <p><?php the_excerpt(); ?></p>
+										<a href="<?php echo link_get_meta( 'link_link' ); ?>"><?php echo link_get_meta( 'link_text' ); ?></a>
 							    </div>
 							</div>
 			            </div>
@@ -57,7 +58,7 @@
 				<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 		        <li data-uk-slideshow-item="<?php echo $slides_count++; ?>"><a href=""></a></li>
 		        <?php endwhile; else: ?>
-				    
+
 			<?php endif; ?>
 		    </ul>
 		</div>

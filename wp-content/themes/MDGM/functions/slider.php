@@ -103,8 +103,11 @@ function link_html( $post) {
 	wp_nonce_field( '_link_nonce', 'link_nonce' ); ?>
 
 	<p>
-		<label for="link_link"><?php _e( 'link', 'link' ); ?></label><br>
+		<label for="link_link"><?php _e( 'Link', 'link' ); ?></label><br>
 		<input type="text" name="link_link" id="link_link" value="<?php echo link_get_meta( 'link_link' ); ?>">
+	</p>	<p>
+		<label for="link_text"><?php _e( 'Text', 'link' ); ?></label><br>
+		<input type="text" name="link_text" id="link_text" value="<?php echo link_get_meta( 'link_text' ); ?>">
 	</p><?php
 }
 
@@ -115,9 +118,12 @@ function link_save( $post_id ) {
 
 	if ( isset( $_POST['link_link'] ) )
 		update_post_meta( $post_id, 'link_link', esc_attr( $_POST['link_link'] ) );
+	if ( isset( $_POST['link_text'] ) )
+		update_post_meta( $post_id, 'link_text', esc_attr( $_POST['link_text'] ) );
 }
 add_action( 'save_post', 'link_save' );
 
 /*
 	Usage: link_get_meta( 'link_link' )
+	Usage: link_get_meta( 'link_text' )
 */

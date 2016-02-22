@@ -4,7 +4,7 @@
 			<div class="uk-width-small-1-1 uk-width-medium-3-4">
 			    <?php
 					$new_query = new WP_Query();
-					$new_query->query('post_type=post&showposts=5'.'&paged='.$paged);
+					$new_query->query('post_type=post&showposts=12'.'&paged='.$paged);
 					?>
 
 					<?php while ($new_query->have_posts()) : $new_query->the_post(); ?>
