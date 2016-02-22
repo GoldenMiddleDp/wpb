@@ -22,13 +22,13 @@
 	<?php } else { ?>
 		<?php require('parts/home/team.php'); ?>
 	<?php }; ?>
-	
+
 	<?php require('parts/home/features.php'); ?>
 	<?php require('parts/home/clients.php'); ?>
 	<?php require('parts/home/revs.php'); ?>
 
 	<div class="uk-container uk-container-center uk-margin-large-top uk-margin-bottom">
-		<h2 class="uk-text-center uk-margin-large-top uk-margin-large-bottom">Последние новости</h2>
+		<h2 class="uk-text-center uk-margin-large-top uk-margin-large-bottom"><?php _e( 'Last news', 'MDGM' ); ?></h2>
 		<?php get_template_part('loop'); ?>
 	</div>
 </div>

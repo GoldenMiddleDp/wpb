@@ -8,7 +8,7 @@
 			 <div <?php post_class(); ?>>
 			   <?php the_content(); ?>
 			 </div>
-			 
+
 		 </div>
 		 			 <?php
  	$defaults = array(
@@ -23,12 +23,12 @@
 		'pagelink'         => '%',
 		'echo'             => 1
 	);
- 
+
         wp_link_pages( $defaults );
 
 ?>
 		<?php endwhile; else: ?>
-		<p>Sorry, no posts matched your criteria.</p>
+		<p><?php _e( 'Sorry, no posts matched your criteria.', 'MDGM' ); ?></p>
 		<?php endif; ?>
 	</div>
 <?php get_footer(); ?>

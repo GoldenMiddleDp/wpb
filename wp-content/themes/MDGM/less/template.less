@@ -146,6 +146,12 @@ a:hover{
 	background: @accent + #111 !important;
 	border-bottom: 3px solid @accent - #111 !important;
 }
+.txt-par{
+	max-width: 776px;
+}
+.img-par{
+	max-width: 100%;
+}
 
 //HEADER STYLES
 header{
@@ -200,6 +206,7 @@ header{
 					vertical-align: middle;
 				}
 			}
+
 			li:hover{
 
 			}
@@ -250,7 +257,7 @@ header{
 				}
 				.uk-dropdown{
 					padding: 0;
-					background: @header-bg;
+					background: @header-bg + #111;
 					overflow: hidden;
 					width: @unitl*12;
 					border: 1px solid @header-bg - #222;
@@ -275,6 +282,7 @@ header{
 								width: 100% !important;
 								width: inherit;
 								line-height: 24px !important;
+								border:none !important;
 								.font
 							}
 							a:hover{
@@ -348,6 +356,17 @@ header.uk-active{
 				}
 				.uk-slidenav-previous{
 				    left: 24px !important;
+				}
+			}
+			#revs{
+				.rev-wrap{
+					padding: @units*4;
+					border: 1px solid @light - #111;
+					margin-bottom: @units*2;
+					border-radius: @radius*2;
+				}
+				.uk-slidenav{
+					top:30% !important;
 				}
 			}
 
@@ -706,6 +725,7 @@ footer{
 	background: @footer-bg;
 	h3{
 		margin-top: 0;
+		margin-bottom: @units*2;
 	}
 	a:active, a:focus{
 		background: none !important;

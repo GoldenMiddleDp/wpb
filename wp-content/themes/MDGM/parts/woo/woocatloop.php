@@ -1,5 +1,5 @@
 <section id="cat-carousel" class="section-space">
-<h2 class="uk-text-center uk-margin-large-top uk-margin-large-bottom">Категории товаров</h2>
+<h2 class="uk-text-center uk-margin-large-top uk-margin-large-bottom"><?php _e( 'Categories', 'MDGM' ); ?> <span class="lnr-arrow-right"></h2>
 <div class="uk-container uk-container-center">
 <div class="uk-slidenav-position" data-uk-slider>
       <div class="">
@@ -11,7 +11,7 @@
                 'orderby'=> 'name',
                 'order' => 'ASC',
                 'hide_empty' => 0
-            ));  
+            ));
 
             foreach( $prod_categories as $prod_cat ) :
                 if ( $prod_cat->parent != 0 )
@@ -21,11 +21,11 @@
                 $term_link = get_term_link( $prod_cat, 'product_cat' );
                 ?>
                     <li class="uk-text-center woo-product-loop">
-                      <a class="" href="<?php echo $term_link; ?>"><img src="<?php echo $cat_thumb_url; ?>" alt="" /></a> 
-                    
+                      <a class="" href="<?php echo $term_link; ?>"><img src="<?php echo $cat_thumb_url; ?>" alt="" /></a>
+
                       <p><a class="" href="<?php echo $term_link; ?>"><?php echo $prod_cat->name; ?></a></p>
                     </li>
-                <?php endforeach; 
+                <?php endforeach;
             wp_reset_query(); ?>
             </ul>
         </div>

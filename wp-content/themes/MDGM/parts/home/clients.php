@@ -1,5 +1,5 @@
     <section id="clients" class="uk-container uk-container-center section-space">
-    <h2 class="uk-text-center uk-margin-large-top uk-margin-large-bottom">Наши клиенты</h2>
+    <h2 class="uk-text-center uk-margin-large-top uk-margin-large-bottom"><?php _e( 'Our clients', 'MDGM' ); ?></h2>
     <div class="uk-grid">
     	<?php
 		$original_query = $wp_query;
@@ -19,10 +19,10 @@
 			<?php if (has_post_thumbnail()): // Check if Thumbnail exists?>
 				<?php the_post_thumbnail('small') ?>
             <?php endif; ?>
-            
+
             <h3><?php //the_title(); ?></h3>
             <p><?php //the_excerpt(); ?></p>
-            
+
         </div>
         <?php endwhile; else: ?>
 		    <div class="uk-width-small-1-1 uk-width-medium-1-4 uk-text-center uk-margin-bottom">

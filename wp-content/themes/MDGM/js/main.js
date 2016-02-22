@@ -16,4 +16,7 @@ $(document).ready(function(){
 
     $('.ninja-forms-form-wrap form').addClass('uk-form');
 
+    $('.post-container p').addClass('txt-par');
+    $('.post-container p').has("img").removeClass('txt-par').addClass('img-par');
+
 });

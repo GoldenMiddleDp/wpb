@@ -15,7 +15,7 @@
 				<div class="uk-container uk-container-center">
 					<div class="uk-grid uk-margin-top">
 					<div class="uk-width-small-1-1 uk-width-medium-1-4 uk-margin-bottom">
-					<h3>Контактная информация:</h3>
+					<h3><?php _e( 'Contacts', 'MDGM' ); ?></h3>
 					<address>
 						<p>
 							<a href="tel:<?php echo $phone_number_one_0; ?>" ><?php echo $phone_number_one_0; ?></a><br>
@@ -29,10 +29,10 @@
 							<?php echo $address_4; ?>
 						</p>
 					</address>
-						
+
 					</div>
 					<div class="uk-width-small-1-1 uk-width-medium-1-4 uk-margin-bottom uk-hidden-small">
-						<h3>Меню:</h3>
+						<h3><?php _e( 'Menu', 'MDGM' ); ?></h3>
 						<?php
                       wp_nav_menu( array(
                         'menu'              => 'primary',
@@ -46,7 +46,7 @@
                       ?>
 					</div>
 					<div class="uk-width-small-1-1 uk-width-medium-1-4 uk-margin-bottom">
-						<h3>Мы в социальных сетях:</h3>
+						<h3><?php _e( 'Our social feed', 'MDGM' ); ?></h3>
 						<ul class="social">
 							<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/social/facebook-48-black.png" alt=""></a></li>
 							<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/social/googleplus-48-black.png" alt=""></a></li>
@@ -84,11 +84,11 @@
 		    <div class="uk-offcanvas-bar">
 		     <div id="offcan-menu">
 		    <div class="uk-text-center" id="mob-cart">
-		   
+
 				     <?php if( class_exists( 'WooCommerce' ) ){ ?>
                       <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf (_n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
                     <?php } else { ?>
-                         <a href="#contmod" data-uk-modal="" class="uk-button">Hello</a>  
+                         <a href="#contmod" data-uk-modal="" class="uk-button">Hello</a>
                     <?php }; ?>
             </div>
 				<?php
@@ -121,9 +121,9 @@
 		<!-- /wrapper -->
 		<?php wp_footer(); ?>
 
-		
+
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
-        
+
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/core/core.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/core/utility.min.js"></script>
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/core/touch.min.js"></script>
@@ -142,7 +142,7 @@
 
 		<!--<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/index.js"></script>-->
 
-		
+
 
 	</body>
 </html>

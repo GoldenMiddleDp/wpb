@@ -1,5 +1,5 @@
     <section id="clients" class="uk-container uk-container-center section-space">
-    <h2 class="uk-text-center uk-margin-large-top uk-margin-large-bottom">Наши преимущества</h2>
+    <h2 class="uk-text-center uk-margin-large-top uk-margin-large-bottom"><?php _e( 'Our features', 'MDGM' ); ?></h2>
     <div class="uk-grid">
     	<?php
 		$original_query = $wp_query;
@@ -17,10 +17,10 @@
 		<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 		<div class="uk-width-small-1-1 uk-width-medium-1-4 uk-text-center uk-margin-bottom">
 			<span class="fico <?php echo icon_get_meta( 'icon_icon_class' ) ?>"></span>
-            
+
             <h3><?php the_title(); ?></h3>
             <p><?php the_excerpt(); ?></p>
-            
+
         </div>
         <?php endwhile; else: ?>
 		    <div class="uk-width-small-1-1 uk-width-medium-1-4 uk-text-center uk-margin-bottom">
