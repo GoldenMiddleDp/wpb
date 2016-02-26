@@ -137,7 +137,7 @@
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/components/slideshow.min.js"></script>
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/components/slider.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/components/lightbox.min.js"></script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/components/search.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/components/accordion.min.js"></script>
 
 
 		<!--<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/index.js"></script>-->

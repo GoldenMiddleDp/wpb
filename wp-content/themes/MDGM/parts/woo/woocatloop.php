@@ -1,5 +1,5 @@
 <section id="cat-carousel" class="section-space">
-<h2 class="uk-text-center uk-margin-large-top uk-margin-large-bottom"><?php _e( 'Categories', 'MDGM' ); ?> <span class="lnr-arrow-right"></h2>
+<h2 class="uk-text-center uk-margin-large-top uk-margin-large-bottom"><?php _e( 'Categories', 'MDGM' ); ?></h2>
 <div class="uk-container uk-container-center">
 <div class="uk-slidenav-position" data-uk-slider>
       <div class="">

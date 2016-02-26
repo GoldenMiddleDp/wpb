@@ -58,7 +58,7 @@ if (function_exists('add_theme_support')){
     // Localisation Support
     load_theme_textdomain('MDGM', get_template_directory() . '/languages');
 }
-    load_theme_textdomain('MDGM', get_template_directory() . '/languages');
+
     function enable_threaded_comments()
     {
         if (!is_admin()) {

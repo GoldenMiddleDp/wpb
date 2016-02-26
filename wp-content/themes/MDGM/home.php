@@ -29,7 +29,7 @@
 
 	<div class="uk-container uk-container-center uk-margin-large-top uk-margin-bottom">
 		<h2 class="uk-text-center uk-margin-large-top uk-margin-large-bottom"><?php _e( 'Last news', 'MDGM' ); ?></h2>
-		<?php get_template_part('loop'); ?>
+		<?php require('parts/loops/overlay-cat.php'); ?>
 	</div>
 </div>
 <?php get_footer(); ?>
