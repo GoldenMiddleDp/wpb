@@ -1,0 +1,564 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MDGM\n"
+"POT-Creation-Date: 2016-02-26 17:49+0200\n"
+"PO-Revision-Date: 2016-02-26 18:07+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: archive.php:15 parts/loops/article.php:7 parts/loops/grid-articles.php:14
+#: parts/loops/grid-articles.php:26 parts/loops/overlay-articles.php:10
+#: single.php:11
+msgid "Posted in"
+msgstr "Категории"
+
+#: archive.php:21 parts/loops/article.php:20 parts/loops/article.php:27
+#: parts/loops/grid-articles.php:18 parts/loops/grid-articles.php:31
+msgid "Read"
+msgstr "Читать далее"
+
+#: author.php:15
+msgid "POsted in"
+msgstr "Категории"
+
+#: author.php:21 page.php:31 single.php:36
+msgid "Sorry, no posts matched your criteria."
+msgstr "Похоже, что категория пуста"
+
+#: comments.php:3
+msgid "Post is password protected. Enter the password to view any comments."
+msgstr "Запись защищена паролем"
+
+#: comments.php:15
+msgid "Next comments"
+msgstr "Следующие комментарии"
+
+#: comments.php:16
+msgid "Previous"
+msgstr "Прошлые"
+
+#: comments.php:21
+msgid "Comments are unavailable"
+msgstr "Комментарии недоступны"
+
+#: footer.php:18
+msgid "Contacts"
+msgstr "Контакты"
+
+#: footer.php:35
+msgid "Menu"
+msgstr "Меню"
+
+#: footer.php:49
+msgid "Our social feed"
+msgstr "Мы в социальных сетях"
+
+#: footer.php:89 functions/woo.php:43 header.php:94
+msgid "View your shopping cart"
+msgstr "Перейти в корзину"
+
+#: footer.php:89 functions/woo.php:43 header.php:94
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d товар"
+msgstr[1] "%d товара"
+msgstr[2] "%d товаров"
+
+#: functions/clients.php:6
+msgctxt "Post Type General Name"
+msgid "clients"
+msgstr "Клиенты"
+
+#: functions/clients.php:7
+msgctxt "Post Type Singular Name"
+msgid "clients"
+msgstr "Клиенты"
+
+#: functions/clients.php:8 functions/clients.php:9 functions/clients.php:10
+#: functions/clients.php:11 functions/clients.php:12
+msgid "Clients"
+msgstr "Клиенты"
+
+#: functions/clients.php:13
+msgid "Add new client"
+msgstr "Добавить клиента"
+
+#: functions/clients.php:14
+msgid "Add client"
+msgstr "Добавить клиента"
+
+#: functions/clients.php:15
+msgid "New client"
+msgstr "Новый клиент"
+
+#: functions/clients.php:16
+msgid "Edit client"
+msgstr "Редактировать клиента"
+
+#: functions/clients.php:17
+msgid "Update client"
+msgstr "Обновить клиента"
+
+#: functions/clients.php:18
+msgid "View client"
+msgstr "Просмотр клиента"
+
+#: functions/clients.php:19
+msgid "Search client"
+msgstr "Искать клиента"
+
+#: functions/clients.php:20
+msgid "Not Clients found"
+msgstr "Клиентов не нашлось :("
+
+#: functions/clients.php:21
+msgid "Not Clients found in Trash"
+msgstr "В корзине клиентов нет :("
+
+#: functions/clients.php:22
+msgid "Client logo"
+msgstr "Логотип клиента"
+
+#: functions/clients.php:23
+msgid "Set client logo"
+msgstr "Установить логотип клиента"
+
+#: functions/clients.php:24
+msgid "Remove client logo"
+msgstr "Удалить логотип клиента"
+
+#: functions/clients.php:25
+msgid "Use as client logo"
+msgstr "Использовать как логотип клиента"
+
+#: functions/clients.php:26 functions/features.php:26 functions/reviews.php:26
+#: functions/slider.php:29 functions/team.php:26
+msgid "Insert into item"
+msgstr "Вставить"
+
+#: functions/clients.php:27 functions/features.php:27 functions/reviews.php:27
+#: functions/slider.php:30 functions/team.php:27
+msgid "Uploaded to this item"
+msgstr "Добавить"
+
+#: functions/clients.php:28 functions/features.php:28 functions/reviews.php:28
+#: functions/slider.php:31 functions/team.php:28
+msgid "Items list"
+msgstr "Огласить весь список"
+
+#: functions/clients.php:29 functions/features.php:29 functions/reviews.php:29
+#: functions/slider.php:32 functions/team.php:29
+msgid "Items list navigation"
+msgstr "Навигация по всем пунктам"
+
+#: functions/clients.php:30 functions/features.php:30 functions/reviews.php:30
+#: functions/slider.php:33 functions/team.php:30
+msgid "Filter items list"
+msgstr "Фильтровать список"
+
+#: functions/clients.php:33
+msgid "clients"
+msgstr "Клиенты"
+
+#: functions/clients.php:34 functions/features.php:34
+msgid "Post Type Description"
+msgstr "Описание типа поста"
+
+#: functions/features.php:6
+msgctxt "Post Type General Name"
+msgid "Features"
+msgstr "Преимущества"
+
+#: functions/features.php:7
+msgctxt "Post Type Singular Name"
+msgid "Features"
+msgstr "Преимущества"
+
+#: functions/features.php:8 functions/features.php:9 functions/features.php:33
+msgid "Features"
+msgstr "Преимущества"
+
+#: functions/features.php:10
+msgid "Features Archives"
+msgstr "Архив преимуществ"
+
+#: functions/features.php:11
+msgid "Feature"
+msgstr "Преимущество"
+
+#: functions/features.php:12
+msgid "All features"
+msgstr "Все преимущества"
+
+#: functions/features.php:13
+msgid "Add New feature"
+msgstr "Добавить преимущество"
+
+#: functions/features.php:14
+msgid "Add feature"
+msgstr "Добавить преимущество"
+
+#: functions/features.php:15
+msgid "New feature"
+msgstr "Добавить преимущество"
+
+#: functions/features.php:16
+msgid "Edit feature"
+msgstr "Редактировать преимущество"
+
+#: functions/features.php:17
+msgid "Update feature"
+msgstr "Обновить преимущество"
+
+#: functions/features.php:18
+msgid "View feature"
+msgstr "Просмотреть преимущество"
+
+#: functions/features.php:19
+msgid "Search feature"
+msgstr "Искать преимущество"
+
+#: functions/features.php:20 functions/slider.php:23
+msgid "Not found"
+msgstr "Не найдено "
+
+#: functions/features.php:21 functions/slider.php:24
+msgid "Not found in Trash"
+msgstr "Не найдено в корзине"
+
+#: functions/features.php:22 functions/slider.php:25
+msgid "Featured Image"
+msgstr "изображение преимущества"
+
+#: functions/features.php:23
+msgid "Set featured image"
+msgstr "Установить изображение преимущества"
+
+#: functions/features.php:24
+msgid "Remove featured image"
+msgstr "Удалить изображение преимущества"
+
+#: functions/features.php:25
+msgid "Use as featured image"
+msgstr "Использовать как изображение преимущества"
+
+#: functions/features.php:73 functions/features.php:81
+msgid "Icon"
+msgstr "Иконка"
+
+#: functions/features.php:94
+msgid "Icon class"
+msgstr "Класс иконки https://linearicons.com/free"
+
+#: functions/menu.php:4
+msgid "Primary Menu"
+msgstr "Главное меню"
+
+#: functions/reviews.php:6
+msgctxt "Post Type General Name"
+msgid "reviews"
+msgstr "Отзывы"
+
+#: functions/reviews.php:7
+msgctxt "Post Type Singular Name"
+msgid "reviews"
+msgstr "Отзывы"
+
+#: functions/reviews.php:8 functions/reviews.php:9 functions/reviews.php:10
+#: functions/reviews.php:11 functions/reviews.php:12 parts/home/revs.php:2
+msgid "Reviews"
+msgstr "Отзывы"
+
+#: functions/reviews.php:13
+msgid "Add new review"
+msgstr "Добавить отзыв"
+
+#: functions/reviews.php:14
+msgid "Add review"
+msgstr "Добавить отзыв"
+
+#: functions/reviews.php:15
+msgid "New review"
+msgstr "Добавить отзыв"
+
+#: functions/reviews.php:16
+msgid "Edit review"
+msgstr "Редактировать отзыв"
+
+#: functions/reviews.php:17
+msgid "Update review"
+msgstr "Обновить отзыв"
+
+#: functions/reviews.php:18
+msgid "View review"
+msgstr "Смотреть отзыв"
+
+#: functions/reviews.php:19
+msgid "Search review"
+msgstr "Искать отзыв"
+
+#: functions/reviews.php:20
+msgid "Not reviews found"
+msgstr "Отзывов не найдено"
+
+#: functions/reviews.php:21
+msgid "Not reviews found in Trash"
+msgstr "Не найдено в корзине"
+
+#: functions/reviews.php:22
+msgid "Reviewer picture"
+msgstr "Изображение для отзыва"
+
+#: functions/reviews.php:23
+msgid "Set reviewer picture"
+msgstr "Задать изображение отзыва"
+
+#: functions/reviews.php:24
+msgid "Remove reviewer picture"
+msgstr "Удалить изображение отзыва"
+
+#: functions/reviews.php:25
+msgid "Use as reviewer picture"
+msgstr "Использовать изображение отзыва"
+
+#: functions/reviews.php:33
+msgid "reviews"
+msgstr "Отзывы"
+
+#: functions/reviews.php:34 functions/team.php:34
+msgid "Post Type Descriptionlients"
+msgstr "Описание"
+
+#: functions/slider.php:9
+msgctxt "Post Type General Name"
+msgid "Slider"
+msgstr "Слайдер"
+
+#: functions/slider.php:10
+msgctxt "Post Type Singular Name"
+msgid "Slider"
+msgstr "Слайдер"
+
+#: functions/slider.php:11 functions/slider.php:12 functions/slider.php:13
+#: functions/slider.php:14 functions/slider.php:36 functions/slider.php:37
+msgid "Slider"
+msgstr "Слайдер"
+
+#: functions/slider.php:15
+msgid "All slides"
+msgstr "Все слайды"
+
+#: functions/slider.php:16
+msgid "Add new slide"
+msgstr "Новый слайд"
+
+#: functions/slider.php:17
+msgid "Add Item"
+msgstr "Новый слайд"
+
+#: functions/slider.php:18
+msgid "New Item"
+msgstr "Новый слайд"
+
+#: functions/slider.php:19
+msgid "Edit Item"
+msgstr "Редактировать слайд"
+
+#: functions/slider.php:20
+msgid "Update Item"
+msgstr "Обновить слайд"
+
+#: functions/slider.php:21
+msgid "View Item"
+msgstr "Просмотрпеть слайд"
+
+#: functions/slider.php:22
+msgid "Search Item"
+msgstr "Искать слады"
+
+#: functions/slider.php:26
+msgid "Set slide image"
+msgstr "Задать слайд"
+
+#: functions/slider.php:27
+msgid "Remove slide image"
+msgstr "Удалить изображение слайда"
+
+#: functions/slider.php:28
+msgid "Use as slide image"
+msgstr "Использовать изображение слайда"
+
+#: functions/slider.php:93 functions/slider.php:106
+msgid "Link"
+msgstr "Ссылка"
+
+#: functions/slider.php:109
+msgid "Text"
+msgstr "Текст ссылки/кнопки"
+
+#: functions/team.php:6
+msgctxt "Post Type General Name"
+msgid "team"
+msgstr "Наша команда"
+
+#: functions/team.php:7
+msgctxt "Post Type Singular Name"
+msgid "team"
+msgstr "Наша команда"
+
+#: functions/team.php:8 functions/team.php:9 functions/team.php:10
+#: functions/team.php:11 functions/team.php:12
+msgid "Team"
+msgstr "Наша команда"
+
+#: functions/team.php:13
+msgid "Add new member"
+msgstr "Добавить члена команды"
+
+#: functions/team.php:14
+msgid "Add member"
+msgstr "Добавить члена команды"
+
+#: functions/team.php:15
+msgid "New member"
+msgstr "Добавить члена команды"
+
+#: functions/team.php:16
+msgid "Edit member"
+msgstr "Редактировать"
+
+#: functions/team.php:17
+msgid "Update member"
+msgstr "Обновить"
+
+#: functions/team.php:18
+msgid "View member"
+msgstr "Просмтотреть"
+
+#: functions/team.php:19
+msgid "Search member"
+msgstr "Искать"
+
+#: functions/team.php:20
+msgid "Not members found"
+msgstr "Ненайдено"
+
+#: functions/team.php:21
+msgid "Not members found in Trash"
+msgstr "Не найдено"
+
+#: functions/team.php:22
+msgid "Member photo"
+msgstr "Фото члена команды"
+
+#: functions/team.php:23
+msgid "Set member photo"
+msgstr "Установить фото"
+
+#: functions/team.php:24
+msgid "Remove member photo"
+msgstr "Удалить фото"
+
+#: functions/team.php:25
+msgid "Use as member photo"
+msgstr "Использовать фото"
+
+#: functions/team.php:33
+msgid "team"
+msgstr "Добавить члена команды"
+
+#: functions/widgets.php:3
+msgid "Sidebar"
+msgstr "Сайдбар"
+
+#: functions/widgets.php:4 functions/widgets.php:13
+msgid "Widget field one"
+msgstr "Первое поле виджета"
+
+#: functions/widgets.php:12
+msgid "WooSidebar"
+msgstr "Сайдбар магазина"
+
+#: home.php:31
+msgid "Last news"
+msgstr "Последние новости"
+
+#: page.php:15
+msgid "Pages:"
+msgstr "Страницы"
+
+#: page.php:21
+msgid "Next page"
+msgstr "Следующая страница"
+
+#: page.php:22
+msgid "Previous page"
+msgstr "Предыдущая страница"
+
+#: parts/home/clients.php:2
+msgid "Our clients"
+msgstr "Наши клиенты"
+
+#: parts/home/features.php:2
+msgid "Our features"
+msgstr "Наши преимущества"
+
+#: parts/home/team.php:2
+msgid "Our team"
+msgstr "Наша команда"
+
+#: parts/woo/woocatloop.php:2
+msgid "Categories"
+msgstr "Категории"
+
+#: parts/woo/woofeatloop.php:2
+msgid "Featured products"
+msgstr "Самые интересные товары"
+
+#: parts/woo/wooloop.php:2
+msgid "New products"
+msgstr "Свежие товары"
+
+#: parts/woo/woosaleloop.php:2
+msgid "Sale products"
+msgstr "Товары со скидками"
+
+#: searchform.php:3
+msgid "Search"
+msgstr "Поиск"
+
+#. Theme Name of the plugin/theme
+msgid "MDGM"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://golden-middle.xyz/theme"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Simple landing page"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Anton Minaev"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://golden-middle.xyz/"
+msgstr ""
