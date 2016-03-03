@@ -18,5 +18,13 @@ $(document).ready(function(){
 
     $('.post-container p').addClass('txt-par');
     $('.post-container p').has("img").removeClass('txt-par').addClass('img-par');
+    
+    $('#slider');
+    
+    if( $('.defbg').length ){
+        $('#slider .uk-slidenav').addClass('uk-hidden');
+    } else {
+        $('.uk-slidenav').removeClass('uk-hidden');
+    };
 
 });

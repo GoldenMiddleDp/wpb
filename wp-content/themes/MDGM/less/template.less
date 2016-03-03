@@ -155,7 +155,6 @@ a:hover{
 
 //HEADER STYLES
 header{
-	background-color: @header-bg !important;
 	height: @header-height;
 	.logo{
 		img{
@@ -317,6 +316,30 @@ header{
 		color: @dark;
 	}
 }
+header.header{
+    	background-color: @header-bg !important;
+}
+
+.header-overlay{
+    position:absolute;
+    background-color: transperent !important;
+    width:100%;
+    z-index: 9997;
+    ul.uk-navbar-nav{
+        li{
+            a{
+                background:transparent !important;
+                border:none !important;
+            }
+        }
+    }
+    .uk-dropdown{
+        
+    }
+}
+
+
+
 header.uk-active{
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.55);
 	-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.55);
@@ -657,7 +680,12 @@ header.uk-active{
 			    text-decoration: none;
 			}
 
-		//OTHER STYLES
+		
+
+
+
+}
+//OTHER STYLES
 		.section-space{
 			margin-top: 24px;
 			margin-bottom: 32px;
@@ -716,10 +744,6 @@ header.uk-active{
 			font-size: 62px;
 			color: @accent;
 		}
-
-
-
-}
 //FOOTER STYLES
 footer{
 	background: @footer-bg;
@@ -837,10 +861,14 @@ footer{
 }
 
 //MODAL STYLES
-.uk-close:after{
+.uk-modal{
+    z-index:9999;
+    .uk-close:after{
 	content: "\e870";
 	font-family: 'Linearicons-Free' !important;
+    }
 }
+
 
 //OFFCANVAS STYLES
 .uk-offcanvas-bar{

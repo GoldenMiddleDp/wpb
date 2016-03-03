@@ -5,6 +5,8 @@ include_once('functions/woo.php');
 include_once('functions/widgets.php');
 // OPTIONS
 include_once('functions/opts.php');
+include_once('functions/customizer.php');
+//include_once('functions/custom.php');
 // WALKERS
 include_once('functions/gallery.php');
 include_once('functions/menu.php');
@@ -16,6 +18,3 @@ include_once('functions/reviews.php');
 include_once('functions/features.php');
 // ADDITIONAL
 include_once('functions/ajaxload.php');
-
-
-

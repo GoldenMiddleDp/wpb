@@ -33,7 +33,7 @@
 		            </div>
 		        </li>
 		        <?php endwhile; else: ?>
-				    <li>
+				    <li class="defbg">
 				    	<img src="<?php echo esc_url( get_header_image() ); ?>">
 				    </li>
 			<?php endif; ?>

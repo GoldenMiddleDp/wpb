@@ -12,24 +12,36 @@
 	$seo_content_8 = $theme_options_options['seo_content_8']; // Seo content
 ?>
 <div class="home-page">
-	<?php require('parts/home/slider-simple.php'); ?>
+	<?php
 
-	<?php if( class_exists( 'WooCommerce' ) ){ ?>
-	    <?php require('parts/woo/wooloop.php'); ?>
-	    <?php require('parts/woo/woocatloop.php'); ?>
-	    <?php require('parts/woo/woofeatloop.php'); ?>
-	    <?php require('parts/woo/woosaleloop.php'); ?>
-	<?php } else { ?>
-		<?php require('parts/home/team.php'); ?>
-	<?php }; ?>
+            include('parts/home/slider-simple.php');
 
-	<?php require('parts/home/features.php'); ?>
-	<?php require('parts/home/clients.php'); ?>
-	<?php require('parts/home/revs.php'); ?>
+            if( class_exists( 'WooCommerce' ) ){
 
-	<div class="uk-container uk-container-center uk-margin-large-top uk-margin-bottom">
-		<h2 class="uk-text-center uk-margin-large-top uk-margin-large-bottom"><?php _e( 'Last news', 'MDGM' ); ?></h2>
-		<?php require('parts/loops/overlay-cat.php'); ?>
-	</div>
+                include('parts/woo/wooloop.php');
+                include('parts/woo/woocatloop.php');
+                include('parts/woo/woofeatloop.php');
+                include('parts/woo/woosaleloop.php');
+
+             } else {
+
+                if( get_theme_mod( 'team' ) == '') { include('parts/home/team.php'); } else {}
+
+             };
+
+            if( get_theme_mod( 'features' ) == '') { include('parts/home/features.php'); } else {}
+            if( get_theme_mod( 'clients' ) == '') { include('parts/home/clients.php'); } else {}
+            if( get_theme_mod( 'revs' ) == '') { include('parts/home/revs.php'); } else {}
+
+            if( get_theme_mod( 'news' ) == '') {
+                echo "<div class=\"uk-container uk-container-center uk-margin-large-top uk-margin-bottom\">";
+                echo "<h2 class=\"uk-text-center uk-margin-large-top uk-margin-large-bottom\"><?php _e( 'Last news', 'MDGM' ); ?></h2>";
+                include('parts/loops/article-cat.php');
+                echo "</div>";
+
+            } else {}
+
+
+        ?>
 </div>
 <?php get_footer(); ?>

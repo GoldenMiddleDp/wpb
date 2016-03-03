@@ -3,20 +3,19 @@
 		<div class="uk-grid">
 			<div class="uk-width-small-1-1 uk-width-medium-7-10">
 			    <?php
-					global $query_string;
+                            global $query_string;
 
-					$query_args = explode("&", $query_string);
-					$search_query = array();
+$query_args = explode("&", $query_string);
+$search_query = array();
 
-					if( strlen($query_string) > 0 ) {
-						foreach($query_args as $key => $string) {
-							$query_split = explode("=", $string);
-							$search_query[$query_split[0]] = urldecode($query_split[1]);
-						} // foreach
-					} //if
+if( strlen($query_string) > 0 ) {
+	foreach($query_args as $key => $string) {
+		$query_split = explode("=", $string);
+		$search_query[$query_split[0]] = urldecode($query_split[1]);
+	} // foreach
+} //if
 
-					$search = new WP_Query($search_query);
-					$search ->query('post_type=post&showposts=99'.'&paged='.$paged);
+$search = new WP_Query($search_query);
 					?>
 
 					<?php while ($search->have_posts()) : $search->the_post(); ?>
